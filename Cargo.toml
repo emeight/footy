@@ -1,0 +1,7 @@
+[workspace]
+members = ["client"]
+resolver = "2"
+
+# Bevy is very slow in debug without this
+[profile.dev.package."*"]
+opt-level = 3
